@@ -23,7 +23,7 @@ let firstCard, secondCard;
 let lockBoard = false;
 let timer;
 let matchCount = 0;
-let timeLeft = 30; // Single source of truth
+let timeLeft = 40; // Single source of truth
 let gameStarted = false;
 
 
@@ -49,8 +49,8 @@ window.addEventListener('load', () => {
 
 function flipCard() {
     if (!gameStarted) {
-    startTimer();       // ⏱ Start timer on first click
-    gameStarted = true; // ✅ Prevent future calls
+    startTimer();       // Start timer on first click
+    gameStarted = true; // Prevent future calls
   }
   if (lockBoard || this === firstCard) return;
 
@@ -105,7 +105,7 @@ function shuffle() {
 
 function startTimer() {
   clearInterval(timer);
-  timeLeft = 30;
+  timeLeft = 40;
   timerElement.textContent = `Time: ${timeLeft}s`;
 
   timer = setInterval(() => {
@@ -137,7 +137,7 @@ function resetGame() {
   matchCount = 0;
   gameStarted = false;
   resultElement.textContent = "";
-  timerElement.textContent = 'Time: 30s';
+  timerElement.textContent = 'Time: 40s';
 
   cards.forEach(card => {
     card.classList.remove('flip');
