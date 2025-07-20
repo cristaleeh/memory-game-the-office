@@ -5,49 +5,113 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Office Memory Game</title>
   <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <script defer src="app.js"></script>
 </head>
 
 <body>
+  <div id="game-container">
+    <div id="header">
+      <h1>The Office Memory Game</h1>
+      <div id="timer">Time: 30s</div>
+    </div>
+<audio id="background-audio" src="sounds/the-office-theme-song_01.mp3" loop></audio>
+<button id="muteButton">Mute</button>
 
 <section class="board">
-  <div class="card">
+  <div class="card" data-framework="kelly">
         <img class="front" src="img/kelly.JPG" alt="kelly kapoor"/>
         <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
       </div>
-      <div class="card">
+        <div class="card" data-framework="kelly">
+        <img class="front" src="img/kelly.JPG" alt="kelly kapoor"/>
+        <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
+      </div>
+
+
+      <div class="card" data-framework="dwight1">
         <img class="front" src="img/dwight1.JPG" alt="dwight cpr face"/>
         <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
       </div>
-      <div class="card">
+            <div class="card" data-framework="dwight1">
+        <img class="front" src="img/dwight1.JPG" alt="dwight cpr face"/>
+        <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
+      </div>
+
+
+
+      <div class="card" data-framework="elf">
         <img class="front" src="img/elf.JPG" alt="elf dwight"/>
         <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
       </div>
-      <div class="card">
+            <div class="card" data-framework="elf">
+        <img class="front" src="img/elf.JPG" alt="elf dwight"/>
+        <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
+      </div>
+
+
+
+      <div class="card" data-framework="prisonmike">
         <img class="front" src="img/prisonmike.JPG" alt="prison mike"/>
         <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
       </div>
-      <div class="card">
+            <div class="card" data-framework="prisonmike">
+        <img class="front" src="img/prisonmike.JPG" alt="prison mike"/>
+        <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
+      </div>
+
+
+
+      <div class="card" data-framework="michael1">
         <img class="front" src="img/michael1.JPG" alt="young michael"/>
         <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
       </div>
-      <div class="card">
+            <div class="card" data-framework="michael1">
+        <img class="front" src="img/michael1.JPG" alt="young michael"/>
+        <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
+      </div>
+
+
+
+      <div class="card" data-framework="stanley">
         <img class="front" src="img/stanley.JPG" alt="stanley hudson"/>
         <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
       </div>
-      <div class="card">
+            <div class="card" data-framework="stanley">
+        <img class="front" src="img/stanley.JPG" alt="stanley hudson"/>
+        <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
+      </div>
+
+
+      <div class="card" data-framework="ryan">
         <img class="front" src="img/ryan.JPG" alt="ryan howard"/>
+        <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
+      </div>
+            <div class="card" data-framework="ryan">
+        <img class="front" src="img/ryan.JPG" alt="ryan howard"/>
+        <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
+      </div>
+
+            <div class="card" data-framework="michael3">
+        <img class="front" src="img/michael3.jpeg" alt="michael scott"/>
+        <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
+      </div>
+            <div class="card" data-framework="michael3">
+        <img class="front" src="img/michael3.jpeg" alt="michael scott"/>
         <img class="back" src="img/office-logo.png" alt="dunder mifflin logo"/>
       </div>
   </div>
 </section>
 
-
-
-<div>
-  <div class="display"></div>
-  <button>Play Again</button>
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <p id="game-result">You Win!</p>
+    <button id="play-again">Play Again</button>
+  </div>
 </div>
+
 
 </body>
 </html>

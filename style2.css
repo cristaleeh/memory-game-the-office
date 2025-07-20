@@ -5,7 +5,9 @@
 }
 
 body {
-  height:110vh;
+  height:100vh;
+  margin: 0;
+  padding: 20px;
   background-image: url(img/dwight.jpeg);
   background-size: cover;
   background-position: center;
@@ -13,26 +15,32 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: "Special Elite, system-ui";
-  display: flex
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .board {
-  width: 800px;
-  max-width: 90vw;
+  width: 100vh;
+  height: 100vh;
+  max-width: 420px;
   height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  perspective: 1000px;
+  padding: 15px;
+  background-color: rgba(255, 228, 196, 0.599);
+  border-radius: 10px;
 }
 .card {
-  width: 200px;
-  height: 200px;
+  aspect-ratio: 3 / 4;
+  width: 100%;
   position: relative;
-  transform: scale(1);
   transform-style: preserve-3d;
   transition: transform 0.5s;
+  border: 5px solid rgb(246, 244, 244);
+  border-radius: 5px;
 }
 .card:active {
   transform: scale(.97);
@@ -45,13 +53,14 @@ body {
 .back {
   width: 100%;
   height: 100%;
-  padding: 20px;
   position: absolute;
-  padding: 0;
   border-radius: 5px;
-  background-color: bisque;
   backface-visibility: hidden;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
+
 .front {
   transform: rotateY(180deg);
 }
@@ -65,4 +74,111 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+.game-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-family: "Special Elite", system-ui;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+#timer {
+  font-size: 20px;
+  color: white;
+  font-family: "Special Elite", system-ui;
+  background-color: rgba(13, 13, 73, 0.731);
+}
+
+#play-again {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Special Elite", system-ui;
+  background-color: #14075e;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#play-again:hover {
+  background-color: #005a9e;
+}
+#game-result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  font-family: "Special Elite", system-ui;
+}
+
+.popup-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #14075e;
+  color: white;
+  font-family: "Special Elite", system-ui;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+h1{
+  background-color: rgba(13, 13, 73, 0.656);
+  color: white;
+  font-family: "Special Elite", system-ui;
+}
+
+#muteButton {
+  font-size: 20px;
+  color: white;
+  font-family: "Special Elite", system-ui;
+  background-color: rgba(13, 13, 73, 0.93);
+  border: solid white 3px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#muteButton.muted::before {
+  content: "🔇";
+}
+#muteButton:not(.muted)::before {
+  content: "🔊";
 }
