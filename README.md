@@ -41,8 +41,21 @@ A fun and interactive memory card game themed around _The Office_ TV show. Test 
 
 👉 [Play Now](https://cristaleeh.github.io/the-office-memory-game/)  
 
+---
+
+## Built with 
+* **HTML5**
+* **CSS3** (transitions, flexbox, animations)
+* **JavaScript** (Dom manipulation, game logic)
 
 ---
+
+## Future Enhancements
+
+* Add score tracking
+* Diffiult levels(easy, medium, hard)
+* Accessibility imporivements
+* Add different sounds for each card pair
 
 ## 🚀 How to Run Locally
 
