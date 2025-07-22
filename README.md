@@ -1,4 +1,62 @@
-<img width="1440" height="900" alt="Screenshot 2025-07-18 at 2 25 28 AM" src="https://github.com/user-attachments/assets/f0865148-e7c6-488b-9009-3a6b4666cceb" />
-<img width="1440" height="900" alt="Screenshot 2025-07-18 at 2 26 14 AM" src="https://github.com/user-attachments/assets/52f31a41-cd21-433a-8bfb-955f79605d9b" />
-<img width="1440" height="900" alt="Screenshot 2025-07-18 at 2 26 25 AM" src="https://github.com/user-attachments/assets/d85da57a-885c-4f32-a303-1f0ae7d85816" />
-<img width="1440" height="900" alt="Screenshot 2025-07-18 at 2 26 32 AM" src="https://github.com/user-attachments/assets/7f5b4810-4128-4a5d-9c79-e6ef4bbc7a52" />
+# 🧠 The Office - Memory Card Game
+
+A fun and interactive memory card game themed around _The Office_ TV show. Test your memory skills by matching character pairs, all built with vanilla **HTML**, **CSS animations**, and **JavaScript**!
+
+![Game Screenshot](screenshot-1.png)
+![Game Screenshot](screenshot-2.png) 
+![Game Screenshot](screenshot-3.png)
+![Game Screenshot](screenshot-4.png)
+![Game Screenshot](screenshot-5.png)
+
+---
+
+## 🎮 Features
+
+- Flip and match cards with your favorite characters
+- Smooth CSS flip animations
+- Keeps track of matched pairs
+- Restart button to play again
+- Fully responsive – works on desktop and mobile
+
+---
+
+## 💾 Live Demo
+
+👉 [Play Now](https://cristaleeh.github.io/the-office-memory-game/)  
+
+
+---
+
+## 🚀 How to Run Locally
+
+Clone the repository and open the game in your browser:
+
+```bash
+# Clone the repo
+git clone https://github.com/cristaleeh/the-office-memory-game.git
+# Navigate into the project directory
+cd the-office-memory-game
+
+# Open index.html in your browser
+
+
+
+
+
+
+
+## Built with 
+* **HTML5**
+* **CSS3** (transitions, flexbox, animations)
+* **JavaScript** (Dom manipulation, game logic)
+
+## Future Enhancements
+
+* Add score tracking
+* Diffiult levels(easy, medium, hard)
+* Accessibility imporivements
+* Add different sounds for each card pair
+
+
+
+

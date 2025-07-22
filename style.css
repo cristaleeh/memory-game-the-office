@@ -82,7 +82,8 @@ body {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 60%;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,11 +92,12 @@ body {
 }
 
 .overlay-extra p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 10px 15px;
-  background-color: rgb(13, 13, 73);
+  background-color: rgb(11, 11, 84);
   border: 3px solid white;
   color: white;
+  border-radius: 10px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   max-width: 100%;
 }
@@ -107,14 +109,14 @@ body {
   font-family: "Special Elite", system-ui;
   cursor: pointer;
   border: 3px solid white;
-  background-color: rgb(13, 13, 73);
+  background-color: rgb(12, 12, 93);
   color: white;
   border-radius: 30px;
   transition: background-color 0.3s ease;
 }
 
 #button:hover {
-  background-color: rgba(13, 13, 73, 0.8);
+  background-color: rgba(8, 8, 169, 0.796);
 }
 
 /* Mobile responsiveness */

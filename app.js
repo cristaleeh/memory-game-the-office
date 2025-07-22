@@ -1,17 +1,8 @@
-
-
-//constants
-
-
 const cards = document.querySelectorAll('.card');
 const popup = document.getElementById('popup');
 const resultText = document.getElementById('game-result');
 const button = document.getElementById('button'); 
-if (button) {
-  button.addEventListener('click',() => {
-    localStorage.setItem('playMusic', 'true');
-  });
-}
+
 const muteButton = document.getElementById('muteButton');
 const bgAudio = document.getElementById('background-audio');
 let resultElement = document.getElementById('game-result');
@@ -26,7 +17,11 @@ let matchCount = 0;
 let timeLeft = 40; // Single source of truth
 let gameStarted = false;
 
-
+if (button) {
+  button.addEventListener('click',() => {
+    localStorage.setItem('playMusic', 'true');
+  });
+}
 
 if (muteButton && bgAudio) {
   muteButton.addEventListener('click', () => {
@@ -40,7 +35,7 @@ window.addEventListener('load', () => {
     if (bgAudio) {
       bgAudio.volume = 0.3;
       bgAudio.play().catch((err) => {
-        console.warn('Autoplay failer:', err);
+        console.warn('Autoplay failure:', err);
       });
     }
     localStorage.removeItem('playMusic');
