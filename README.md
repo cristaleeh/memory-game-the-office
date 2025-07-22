@@ -37,12 +37,6 @@ A fun and interactive memory card game themed around _The Office_ TV show. Test 
 
 ---
 
-## 💾 Live Demo
-
-👉 [Play Now](https://cristaleeh.github.io/the-office-memory-game/)  
-
----
-
 ## Built with 
 * **HTML5**
 * **CSS3** (transitions, flexbox, animations)
