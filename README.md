@@ -2,11 +2,11 @@
 
 A fun and interactive memory card game themed around _The Office_ TV show. Test your memory skills by matching character pairs, all built with vanilla **HTML**, **CSS animations**, and **JavaScript**!
 
-![Game Screenshot](screenshot-1.png)
-![Game Screenshot](screenshot-2.png) 
-![Game Screenshot](screenshot-3.png)
-![Game Screenshot](screenshot-4.png)
-![Game Screenshot](screenshot-5.png)
+![Game Screenshot](/screenshots/screenshot-1.png)
+![Game Screenshot](/screenshots/screenshot-2.png) 
+![Game Screenshot](/screenshots/screenshot-3.png)
+![Game Screenshot](/screenshots/screenshot-4.png)
+![Game Screenshot](/screenshots/screenshot-5.png)
 
 ---
 
@@ -17,6 +17,23 @@ A fun and interactive memory card game themed around _The Office_ TV show. Test 
 - Keeps track of matched pairs
 - Restart button to play again
 - Fully responsive – works on desktop and mobile
+
+---
+
+## 🛠 Built With
+
+* **HTML5**
+* **CSS3** (transitions, flexbox, animations)
+* **JavaScript** (DOM manipulation, game logic)
+
+---
+
+## 🎯 Future Enhancements
+
+* Add score tracking  
+* Difficulty levels (easy, medium, hard)  
+* Accessibility improvements  
+* Add different sounds for each card pair
 
 ---
 
@@ -38,25 +55,6 @@ git clone https://github.com/cristaleeh/the-office-memory-game.git
 cd the-office-memory-game
 
 # Open index.html in your browser
-
-
-
-
-
-
-
-## Built with 
-* **HTML5**
-* **CSS3** (transitions, flexbox, animations)
-* **JavaScript** (Dom manipulation, game logic)
-
-## Future Enhancements
-
-* Add score tracking
-* Diffiult levels(easy, medium, hard)
-* Accessibility imporivements
-* Add different sounds for each card pair
-
 
 
 
